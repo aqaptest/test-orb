@@ -1,3 +1,4 @@
-executor: default
-steps:
-  - greet
+build-with-machine:
+  executor: default
+  steps:
+    - greet
