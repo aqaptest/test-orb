@@ -1,15 +1,12 @@
-description: >
-  This command echos "Hello World" using file inclusion.
-# What will this command do?
-# Descriptions should be short, simple, and clear.
-parameters:
-  to:
-    type: string
-    default: "World"
-    description: "Hello to whom?"
 steps:
   - run:
       environment:
-        PARAM_TO: <<parameters.to>>
-      name: Hello Greeting
+        CLOUDQA_API_KEY: "MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
+        CLOUDQA_SUITE_ID: 2682
+        CLOUDQA_BROWSER: Chrome
+        CLOUDQA_BUILD_TAG: "Travis CI demo"
+        CLOUDQA_BASE_URL: "http://www.seleniumeasy.com/"
+        CLOUDQA_VARIABLES: "cicd1=3,cicd2=3,cicd3=6"
+        CLOUDQA_SEQUENTIAL_EXECUTION: FALSE
+        CLOUDQA_ENVIRONMENT_NAME: "p"
       command: <<include(scripts/greet.sh)>>
