@@ -2,4 +2,4 @@ version: 2.1
 workflows:
   testorb:
     jobs:
-      - hello
+      - build-with-machine
