@@ -1,7 +1,7 @@
 version: 2.1
 orbs:
-  hello: circleci/test-orb@0.4.1
+  testorb: circleci/test-orb
 workflows:
-  hello:
+  testorb:
     jobs:
       - hello/run
