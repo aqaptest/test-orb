@@ -1,5 +1,3 @@
-# Orb Project CloudQA
-
 test-circleci
 ===================
 
