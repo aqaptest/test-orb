@@ -1,5 +1,5 @@
 version: 2.1
 workflows:
-  testorb:
+  build-with-machine:
     jobs:
       - build-with-machine
